@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.btn {
+  padding: pxToRem(15) pxToRem(36);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  width: auto;
+  cursor: pointer;
+}

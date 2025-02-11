@@ -1,0 +1,18 @@
+@use "functions" as *;
+
+// Font family
+$primary-font: Poppins;
+
+// Breakpoints
+
+$medium: 768px;
+$extra-lager: 1200px;
+
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
+
+// Colors
+$primary-color: #c75e90;
+$background-color: #ffffff;
+$text-color: #232323;
+$main-spacing: pxToRem(-0.58);

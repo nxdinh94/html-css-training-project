@@ -1,0 +1,52 @@
+@use "../abstracts/" as *;
+
+.title {
+  margin-bottom: pxToRem(23);
+  letter-spacing: $main-spacing;
+  &--primary {
+    line-height: pxToRem(75);
+    font-size: pxToRem(64);
+
+    @include tablet {
+      font-size: pxToRem(36);
+      line-height: pxToRem(42);
+    }
+
+    @include mobile {
+      font-size: pxToRem(32);
+      line-height: pxToRem(37);
+    }
+  }
+  &--secondary {
+    font-size: pxToRem(44);
+    line-height: pxToRem(48);
+    padding-bottom: 22px;
+    text-transform: capitalize;
+
+    @include tablet {
+      font-size: pxToRem(32);
+      line-height: pxToRem(40);
+      padding-bottom: 10px;
+    }
+
+    @include mobile {
+      font-size: pxToRem(20);
+      padding-bottom: 7px;
+    }
+  }
+  &--third {
+    font-size: pxToRem(18);
+
+    @include tablet {
+      font-size: pxToRem(12);
+    }
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.link-main {
+  &:hover {
+    color: $primary-color;
+  }
+}
