@@ -80,6 +80,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(65.91deg, #fffefe 2.93%, #f7dde9 100%);
+}
+
+.container {
+  margin: 0 80px;
 }
 
 @font-face {
@@ -99,6 +104,115 @@ body {
     font-size: 0.6875rem;
     line-height: 1rem;
   }
+}
+
+.header {
+  /* Toggle Container */
+  /* Hide default checkbox */
+  /* Toggle Background */
+  /* Toggle Ball */
+  /* Icons */
+  /* Default (Light Mode) */
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu-list {
+  display: flex;
+  list-style: none;
+}
+.header__menu-link {
+  text-decoration: none;
+  margin: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+.header__menu-item {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__mode-switch {
+  display: flex;
+  justify-content: space-between;
+  width: 109px;
+  height: 45px;
+  border-radius: 220px;
+  margin: 0 10px;
+  background-color: rgb(200, 103, 103);
+}
+.header__book {
+  width: 165px;
+  height: 45px;
+  border-radius: 220px;
+  background-color: #c75e90;
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.header .toggle-container {
+  position: relative;
+  width: 109px;
+  height: 45px;
+  border-radius: 220px;
+  margin: 0 10px;
+  background-color: rgb(200, 103, 103);
+}
+.header .toggle-checkbox {
+  display: none;
+}
+.header .toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Default Dark Mode */
+  border-radius: 250px;
+  padding: 0px 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+.header .toggle-ball {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 60px); /* Default Light Mode Position */
+  width: 55%;
+  height: 100%;
+  background: #c75e90; /* Default Light Mode Ball */
+  border-radius: 200px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.header .toggle-icon {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+.header .toggle-checkbox:checked + .toggle-label {
+  background-color: #ffffff; /* Light Mode */
+}
+.header .toggle-checkbox:checked + .toggle-label .toggle-ball {
+  left: 0px; /* Moves to Dark Mode */
+  background: #c75e90; /* Dark Mode Ball */
 }
 
 /*# sourceMappingURL=/main.f3749b86.css.map */

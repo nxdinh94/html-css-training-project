@@ -1,13 +1,58 @@
-<header>
-  <div>
-    <img src="../assets/icons/logo.svg" alt="my-logo" />
-    <nav>
-      <li>something</li>
-      <li>something</li>
-      <li>something</li>
-      <li>something</li>
-    </nav>
-    <div>mode</div>
-    <div>book now</div>
+<header class="header container">
+  <div class="header__top">
+    <img class="header__logo" src="../assets/icons/logo.svg" alt="my-logo" />
+    <div class="header__menu">
+      <nav class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">About Us</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Our Rooms</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Purr Care</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Testimonial</a>
+        </li>
+      </nav>
+    </div>
+    <div class="header__action">
+      <!-- <div class="header__toggle">
+        <input type="header__checkbox" id="modeToggle" class="toggle-checkbox" />
+        <label for="modeToggle" class="headrer__toggle-label">
+          <div class="header__toggle-ball"></div>
+          <img
+            src="../assets/icons/moon.svg"
+            alt="Night Mode"
+            class="header__toggle-icon header__toggle--moon"
+          />
+          <img
+            src="../assets/icons/shape.svg"
+            alt="Light Mode"
+            class="header__toggle-icon header__toggle--sun"
+          />
+        </label>
+      </div> -->
+      <div class="toggle-container">
+        <input type="checkbox" id="modeToggle" class="toggle-checkbox" />
+        <label for="modeToggle" class="toggle-label">
+          <div class="toggle-ball"></div>
+          <img
+            src="../assets/icons/moon.svg"
+            alt="Night Mode"
+            class="toggle-icon moon-icon"
+          />
+          <img
+            src="../assets/icons/shape.svg"
+            alt="Light Mode"
+            class="toggle-icon sun-icon"
+          />
+        </label>
+      </div>
+      <button class="header__book">
+        <p>BOOK NOW</p>
+      </button>
+    </div>
   </div>
 </header>

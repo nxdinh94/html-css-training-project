@@ -21,6 +21,21 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
     <script>
       HTMLInspector.inspect();
+      const toggle = document.getElementById("modeToggle");
+
+      // Toggle mode and save in localStorage
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode", !toggle.checked);
+        localStorage.setItem("theme", toggle.checked ? "light" : "dark");
+      });
+
+      // Load saved mode on refresh
+      if (localStorage.getItem("theme") === "dark") {
+        toggle.checked = false;
+        document.body.classList.add("dark-mode");
+      } else {
+        toggle.checked = true;
+      }
     </script>
   </body>
 </html>
