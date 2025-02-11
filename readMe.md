@@ -26,7 +26,7 @@
 
 ## SOURCE CODE
 
-- Step1: Clone project : git clone [git](https://github.com/baonguyen26/html-css.git)
+- Step1: Clone project : git clone [git](https://github.com/nxdinh94/html-css-training-project.git)
 
 ## HOW TO RUN
 
@@ -35,7 +35,7 @@
 - Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd html-css
+cd html-css-training-project
 pnpm i
 pnpm dev
 Open on web: http://localhost:1234
