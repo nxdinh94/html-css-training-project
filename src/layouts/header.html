@@ -1,58 +1,135 @@
-<header class="header container">
-  <div class="header__top">
-    <img class="header__logo" src="../assets/icons/logo.svg" alt="my-logo" />
-    <div class="header__menu">
-      <nav class="header__menu-list">
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">About Us</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Our Rooms</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Purr Care</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Testimonial</a>
-        </li>
-      </nav>
-    </div>
-    <div class="header__action">
-      <!-- <div class="header__toggle">
-        <input type="header__checkbox" id="modeToggle" class="toggle-checkbox" />
-        <label for="modeToggle" class="headrer__toggle-label">
-          <div class="header__toggle-ball"></div>
-          <img
-            src="../assets/icons/moon.svg"
-            alt="Night Mode"
-            class="header__toggle-icon header__toggle--moon"
-          />
-          <img
-            src="../assets/icons/shape.svg"
-            alt="Light Mode"
-            class="header__toggle-icon header__toggle--sun"
-          />
-        </label>
-      </div> -->
-      <div class="toggle-container">
-        <input type="checkbox" id="modeToggle" class="toggle-checkbox" />
-        <label for="modeToggle" class="toggle-label">
-          <div class="toggle-ball"></div>
-          <img
-            src="../assets/icons/moon.svg"
-            alt="Night Mode"
-            class="toggle-icon moon-icon"
-          />
-          <img
-            src="../assets/icons/shape.svg"
-            alt="Light Mode"
-            class="toggle-icon sun-icon"
-          />
-        </label>
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+      <img class="header__logo" src="../assets/icons/logo.svg" alt="my-logo" />
+      <div class="header__menu">
+        <nav class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">About Us</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Our Rooms</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Purr Care</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Testimonial</a>
+          </li>
+        </nav>
       </div>
-      <button class="header__book">
-        <p>BOOK NOW</p>
-      </button>
+      <div class="header__action">
+        <div class="header__toggle">
+          <input type="checkbox" id="modeToggle" class="header__checkbox" />
+          <label for="modeToggle" class="header__toggle-label">
+            <div class="header__toggle-ball"></div>
+            <img
+              src="../assets/icons/moon.svg"
+              alt="Night Mode"
+              class="header__toggle-icon moon-icon"
+            />
+            <img
+              src="../assets/icons/shape.svg"
+              alt="Light Mode"
+              class="header__toggle-icon sun-icon"
+            />
+          </label>
+        </div>
+        <button class="btn header__book-now">
+          <p>BOOK NOW</p>
+        </button>
+      </div>
+      <img
+        src="../assets/icons/menu.svg"
+        alt="menu"
+        class="header__menu-icon"
+      />
+    </div>
+    <div class="header__bottom">
+      <div class="header__container-bottom">
+        <div class="header__left-side">
+          <p class="header__left-side--subs">
+            Where Feline Comfort Comes First
+          </p>
+          <p class="header__left-side--title">Your 5 Stars Purr Inn</p>
+          <p class="header__left-side--description">
+            At NekoInn, we understand that your beloved feline companion
+            deserves the best care, even when you can't be there. That's why
+            we've created a haven designed specifically for cats, where every
+            whisker is cherished and every purr is celebrated. From cozy
+            accommodations to personalized attention, we strive to provide a
+            nurturing environment where your cat can relax, play, and thrive
+            while you're away. Welcome to NekoInn, where your cat's comfort and
+            happiness are our top priorities.
+          </p>
+          <button class="btn header__left-side--btn">BOOK A PURR-SUITE</button>
+          <div class="header__left-side--watch">
+            <p>WATCH NOW</p>
+            <p>Introducing The NekoInn</p>
+            <button>
+              <img src="../assets/icons/play-button.svg" alt="sleeping cat" />
+            </button>
+          </div>
+        </div>
+        <div class="header__right-side">
+          <div class="header__right-side-container">
+            <img
+              src="../assets/images/header-left-cat4.png"
+              alt="cat4"
+              class="header__right-side-container--img header__right-side-container--img4"
+            />
+            <img
+              src="../assets/images/header-left-cat3.png"
+              alt="cat3"
+              class="header__right-side-container--img header__right-side-container--img3"
+            />
+            <img
+              src="../assets/images/header-left-cat2.png"
+              alt="cat2"
+              class="header__right-side-container--img header__right-side-container--img2"
+            />
+            <img
+              src="../assets/images/header-left-cat1.png"
+              alt="cat1"
+              class="header__right-side-container--img header__right-side-container--img1"
+            />
+            <img
+              src="../assets/icons/Vector.svg"
+              alt="vector-top-left"
+              class="header__right-side-container--vector-top-left"
+            />
+            <img
+              src="../assets/icons/Vector.svg"
+              alt="vector-bottom-right"
+              class="header__right-side-container--vector-bottom-right"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+      <div class="contact__address">
+        <img
+          src="../assets/icons/location.svg"
+          alt="location"
+          class="contact__address--icon"
+        />
+        <p class="contact__address--text">
+          123 Meow Avenue. <br />
+          Kittyville, CA 90210 United States
+        </p>
+      </div>
+      <div class="contact__type">
+        <div class="contact__type--phone">
+          <img src="../assets/icons/phone.svg" alt="phone-icon" />
+          <p>(555) 555-5555</p>
+        </div>
+        <div class="contact__type--email">
+          <img src="../assets/icons/mail.svg" alt="mail-icon" />
+          <p>info@neko-inn.com</p>
+        </div>
+      </div>
     </div>
   </div>
 </header>
