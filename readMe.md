@@ -4,7 +4,7 @@
 
 ## TIMELINE:
 
-- 1 week (Feb 10 - Feb 16)
+- 2 week (Feb 10 - Feb 24)
 
 ## TARGET:
 
