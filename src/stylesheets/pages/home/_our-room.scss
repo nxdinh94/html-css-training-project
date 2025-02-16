@@ -1,0 +1,60 @@
+@use "../../abstracts/" as *;
+.room {
+  margin-top: 70px;
+  @include flex();
+  @include mobile {
+    margin-top: 35px;
+    flex-direction: column;
+  }
+}
+.room-left {
+  padding-right: 90px;
+  width: 100%;
+  @include mobile {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  img {
+    border-radius: 25px;
+    @include mobile {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+.room-right {
+  padding: 10px 0px;
+  &__subs {
+    margin-bottom: 25px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+.feature-one,
+.feature-two,
+.feature-three {
+  @include flex();
+}
+
+.feature-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+  margin-top: 6px;
+}
+.feature-icon {
+  margin-right: 20px;
+  border-radius: 50px;
+  background-color: #c75e90;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+}
