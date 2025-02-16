@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.subs {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #696969;
+  letter-spacing: 4px;
+  @include mobile {
+    font-size: 10px;
+    text-align: center;
+  }
+}
