@@ -1,11 +1,11 @@
 @use "../../abstracts/" as *;
 
 .carousel {
+  margin-top: 65px;
   @include flex();
   @include mobile {
     flex-direction: column;
   }
-  margin-top: 65px;
   @include mobile {
     margin-top: 40px;
   }
