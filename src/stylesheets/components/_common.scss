@@ -3,17 +3,20 @@
 @forward "button";
 @forward "card";
 @forward "title";
-
+@forward "icon";
+@forward "subs";
+@forward "hr";
+@forward "description";
 .container {
-  max-width: 1140px;
+  max-width: 1313px;
   margin: 0 auto;
 
   @include tablet {
-    max-width: 720px;
+    max-width: 768px;
   }
 
   @include mobile {
-    padding: 0 15px;
+    padding: 0 26px;
     max-width: inherit;
   }
 }
