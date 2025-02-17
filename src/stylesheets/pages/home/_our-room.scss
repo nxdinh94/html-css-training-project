@@ -1,6 +1,7 @@
 @use "../../abstracts/" as *;
 .room {
   margin-top: 70px;
+  padding-bottom: 60px;
   @include flex();
   @include mobile {
     margin-top: 35px;
