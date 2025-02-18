@@ -13,6 +13,7 @@ body {
   color: $text-color;
   background-color: $background-color;
   overflow-x: hidden;
+
   @include tablet {
     font-size: pxToRem(11);
     line-height: pxToRem(16);
