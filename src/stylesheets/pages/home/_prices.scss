@@ -1,0 +1,119 @@
+@use "../../abstracts/" as *;
+
+.prices {
+  margin: 70px 0px;
+  width: 100%;
+  @include mobile {
+    margin: 144px 0px;
+  }
+  &__header-hero {
+    text-align: center;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  &__title {
+    margin: 20px 0px;
+  }
+  &__body-hero {
+    @include flex($align: center);
+    @include mobile {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+.element-hero {
+  padding: 30px 60px;
+  width: 444px;
+  height: 577px;
+  border-radius: 40px;
+  background-color: white;
+  flex: 1;
+  @include mobile {
+    padding: 30px 30px;
+  }
+  &:nth-child(2) {
+    height: 644px;
+    background-color: #c75e90;
+  }
+  &:first-child {
+    border-radius: 40px 0px 0px 40px;
+    @include mobile {
+      border-radius: 40px;
+    }
+  }
+  &:last-child {
+    border-radius: 0px 40px 40px 0px;
+    @include mobile {
+      border-radius: 40px;
+    }
+  }
+
+  &__header {
+    @include flex($justify: space-between, $align: center);
+    &--text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+      color: #c75e90;
+    }
+    &--prime-text {
+      color: white;
+    }
+    &--icon {
+      width: 57px;
+      height: 57px;
+    }
+  }
+  &__prices {
+    height: fit-content;
+    margin: 40px 0px;
+    @include mobile {
+      margin: 30px 0px;
+    }
+    @include flex();
+    &--money {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 5px;
+    }
+    &--time {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &__prices-prime {
+    margin-bottom: 50px;
+  }
+  &__list {
+    padding-left: 5px;
+    margin-bottom: 45px;
+    &--item {
+      list-style: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 16px;
+      @include flex($align: center);
+      gap: 16px;
+    }
+  }
+  &__list-prime {
+    margin-bottom: 80px;
+  }
+  &__action {
+    &--btn {
+      width: 236px;
+    }
+    &--btn-prime {
+      background-color: #8e345f;
+    }
+  }
+}
+.element-hero-prime {
+  color: white;
+}
