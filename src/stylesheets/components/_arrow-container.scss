@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.arrow-container {
+  background-color: #c75e90;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  @include flex($justify: center, $align: center);
+}
