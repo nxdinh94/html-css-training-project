@@ -1,0 +1,100 @@
+@use "../../abstracts/" as *;
+.booking {
+  width: 100%;
+  height: fit-content;
+  padding: 60px 24px;
+  background-color: white;
+  margin: 70px 0px;
+  border-radius: 40px;
+}
+.booking-header {
+  @include flex($direction: column, $align: center);
+  margin-bottom: 70px;
+  &__title {
+    margin: 20px 0px;
+  }
+  &__description {
+    max-width: 82ch;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+}
+
+.booking-body {
+  width: 100%;
+  //   @include flex($justify: center);
+  &__row {
+    @include flex();
+    gap: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__form-hero {
+    flex: 1;
+    border: 1px solid #b7b7b7;
+    height: 70px;
+    border-radius: 40px;
+    padding: 10px 40px 0px 40px;
+    &--calender-hero {
+      position: absolute;
+      background-color: #c75e90;
+      width: 54px;
+      height: 54px;
+      border-radius: 40px;
+      right: 20px;
+      top: 50%;
+      bottom: 50%;
+      margin: auto 0;
+      @include flex($justify: center, $align: center);
+      @include mobile {
+        width: 46px;
+        height: 46px;
+      }
+    }
+    &--calender {
+      width: 35px;
+      height: 35px;
+      @include mobile {
+        width: 29px;
+        height: 29px;
+      }
+    }
+    &--legend {
+      font-size: 10px;
+      text-align: start;
+    }
+    &--input {
+      border: none;
+      background-color: transparent;
+      color: $text-color;
+      width: 100%;
+      height: 30px;
+      padding: 0;
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+      }
+    }
+  }
+  &__action {
+    width: 100%;
+    @include flex($justify: center);
+  }
+  &__booking-btn {
+    width: 236px;
+    height: 56px;
+    margin: auto;
+    border-radius: 220px;
+    background-color: #c75e90;
+  }
+}
