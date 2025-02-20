@@ -1,5 +1,4 @@
 @use "../abstracts/" as *;
-@forward "form";
 @forward "button";
 @forward "title";
 @forward "icon";
@@ -16,6 +15,7 @@
   }
 
   @include mobile {
-    max-width: inherit;
+    padding: 0px 25px;
+    // max-width: inherit;
   }
 }

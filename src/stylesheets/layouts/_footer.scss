@@ -7,7 +7,7 @@
   padding: 50px 0px;
   @include mobile {
     height: fit-content;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 90px 90px 0px 0px;
   }
   &-top {
     @include flex($justify: start);
@@ -56,8 +56,11 @@
         max-width: 719px;
         border-radius: 77px;
         background: transparent;
-        padding: 0px 40px;
+        padding: 0px 20px;
         border: 1px solid white;
+        @include mobile {
+          padding: 0px 14px;
+        }
 
         &-input {
           width: 100%;
@@ -98,8 +101,8 @@
       flex: 1;
       @include flex($direction: column);
       @include mobile {
-        margin-left: 30px;
-        margin-bottom: 60px;
+        margin-left: 10px;
+        margin-bottom: 30px;
       }
       &-hero {
         @include flex($align: start);
@@ -200,5 +203,4 @@
       }
     }
   }
-  
 }

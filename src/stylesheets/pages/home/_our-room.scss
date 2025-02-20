@@ -11,20 +11,22 @@
 .room-left {
   padding-right: 90px;
   width: 100%;
+  flex: 1;
   @include mobile {
     margin-bottom: 50px;
     padding: 0;
   }
   img {
     border-radius: 25px;
+    width: 100%;
     @include mobile {
-      width: 100%;
       margin: auto;
     }
   }
 }
 .room-right {
   padding: 10px 0px;
+  flex: 1;
   &__subs {
     margin-bottom: 25px;
   }
