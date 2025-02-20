@@ -224,24 +224,23 @@
     }
   }
   // right side
-  // &__right-side {
-  // }
+  &__right-side {
+    width: 100%;
+    z-index: 0;
+    @include mobile {
+      padding-left: 20px;
+    }
+  }
   &__right-side-container {
-    background-image: url("../assets/images/header-right-cat-bg.png");
-    // background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 565px;
+    width: 100%;
     height: 557px;
+    // height: auto;
     position: relative;
-    margin-left: auto;
-    z-index: 2;
+    @include bg-img($bg: "../assets/images/header-right-cat-bg.png");
+    background-size: contain;
     @include mobile {
       background-image: url("../assets/images/mobile/cat-bg.png");
-      width: 371.21px;
       height: 365.87px;
-      margin: auto;
     }
     &--img {
       position: absolute;
@@ -282,25 +281,34 @@
         bottom: -5%;
       }
     }
+
     &--vector-top-left {
       position: absolute;
+      width: 288px;
+      height: 288px;
       top: -10%;
       left: -10%;
       z-index: -1;
       @include mobile {
-        top: -15%;
-        left: -15%;
+        top: 0%;
+        left: -12%;
+        width: 189px;
+        height: 189px;
       }
     }
     &--vector-bottom-right {
+      width: 288px;
+      height: 288px;
       position: absolute;
       bottom: -15%;
       right: -5%;
       transform: rotate(90deg);
       z-index: -1;
       @include mobile {
-        bottom: -20%;
-        right: -15%;
+        bottom: -10%;
+        right: -5%;
+        width: 189px;
+        height: 189px;
       }
     }
   }
