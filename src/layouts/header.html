@@ -1,7 +1,14 @@
 <header class="header">
   <div class="container header__container">
     <div class="header__top">
-      <img class="header__logo" src="../assets/icons/logo.svg" alt="my-logo" />
+      <figure>
+        <img
+          class="header__logo"
+          src="../assets/icons/logo.svg"
+          alt="my-logo"
+        />
+      </figure>
+
       <div class="header__menu">
         <nav class="header__menu-list">
           <li class="header__menu-item">
@@ -20,39 +27,44 @@
       </div>
       <div class="header__action">
         <div class="header__toggle">
-          <input type="checkbox" id="modeToggle" class="header__checkbox" />
           <label for="modeToggle" class="header__toggle-label">
+            <figure class="header__toggle-figure">
+              <img
+                src="../assets/icons/moon.svg"
+                alt="Night Mode"
+                class="header__toggle-icon moon-icon"
+              />
+            </figure>
+            <figure class="header__toggle-figure">
+              <img
+                src="../assets/icons/shape.svg"
+                alt="Light Mode"
+                class="header__toggle-icon sun-icon"
+              />
+            </figure>
             <div class="header__toggle-ball"></div>
-            <img
-              src="../assets/icons/moon.svg"
-              alt="Night Mode"
-              class="header__toggle-icon moon-icon"
-            />
-            <img
-              src="../assets/icons/shape.svg"
-              alt="Light Mode"
-              class="header__toggle-icon sun-icon"
-            />
           </label>
         </div>
         <button class="btn header__book-now">
           <p>BOOK NOW</p>
         </button>
       </div>
-      <img
-        src="../assets/icons/menu.svg"
-        alt="menu"
-        class="header__menu-icon"
-      />
+      <figure>
+        <img
+          src="../assets/icons/menu.svg"
+          alt="menu"
+          class="header__menu-icon"
+        />
+      </figure>
     </div>
     <div class="header__bottom">
       <div class="header__container-bottom">
         <div class="header__left-side">
-          <p class="header__left-side--subs">
+          <p class="header__left-side--subs subs">
             Where Feline Comfort Comes First
           </p>
-          <p class="header__left-side--title">Your 5 Stars Purr Inn</p>
-          <p class="header__left-side--description">
+          <p class="header__left-side--title title">Your 5 Stars Purr Inn</p>
+          <p class="header__left-side--description description">
             At NekoInn, we understand that your beloved feline companion
             deserves the best care, even when you can't be there. That's why
             we've created a haven designed specifically for cats, where every
@@ -64,69 +76,95 @@
           </p>
           <button class="btn header__left-side--btn">BOOK A PURR-SUITE</button>
           <div class="header__left-side--watch">
-            <p>WATCH NOW</p>
-            <p>Introducing The NekoInn</p>
+            <p class="header__left-side--text">WATCH NOW</p>
+            <p class="header__left-side--text">Introducing The NekoInn</p>
             <button>
-              <img src="../assets/icons/play-button.svg" alt="sleeping cat" />
+              <figure>
+                <img src="../assets/icons/play-button.svg" alt="sleeping cat" />
+              </figure>
             </button>
           </div>
         </div>
         <div class="header__right-side">
           <div class="header__right-side-container">
-            <img
-              src="../assets/images/header-left-cat4.png"
-              alt="cat4"
-              class="header__right-side-container--img header__right-side-container--img4"
-            />
-            <img
-              src="../assets/images/header-left-cat3.png"
-              alt="cat3"
-              class="header__right-side-container--img header__right-side-container--img3"
-            />
-            <img
-              src="../assets/images/header-left-cat2.png"
-              alt="cat2"
-              class="header__right-side-container--img header__right-side-container--img2"
-            />
-            <img
-              src="../assets/images/header-left-cat1.png"
-              alt="cat1"
-              class="header__right-side-container--img header__right-side-container--img1"
-            />
-            <img
-              src="../assets/icons/Vector.svg"
-              alt="vector-top-left"
-              class="header__right-side-container--vector-top-left"
-            />
-            <img
-              src="../assets/icons/Vector.svg"
-              alt="vector-bottom-right"
-              class="header__right-side-container--vector-bottom-right"
-            />
+            <figure>
+              <img
+                src="../assets/images/header-left-cat4.png"
+                alt="cat4"
+                class="header__right-side-container--img header__right-side-container--img4"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/images/header-left-cat3.png"
+                alt="cat3"
+                class="header__right-side-container--img header__right-side-container--img3"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/images/header-left-cat2.png"
+                alt="cat2"
+                class="header__right-side-container--img header__right-side-container--img2"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/images/header-left-cat1.png"
+                alt="cat1"
+                class="header__right-side-container--img header__right-side-container--img1"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/icons/Vector.svg"
+                alt="vector-top-left"
+                class="header__right-side-container--vector-top-left"
+              />
+            </figure>
+
+            <figure>
+              <img
+                src="../assets/icons/Vector.svg"
+                alt="vector-bottom-right"
+                class="header__right-side-container--vector-bottom-right"
+              />
+            </figure>
           </div>
         </div>
       </div>
     </div>
     <!-- contact -->
-    <div class="contact">
-      <div class="contact__address">
-        <img
-          src="../assets/icons/location.svg"
-          alt="location"
-          class="contact__address--icon"
-        />
-        <p class="contact__address--text">
+    <div class="header-contact">
+      <div class="header-contact__address">
+        <figure>
+          <img
+            src="../assets/icons/location.svg"
+            alt="location"
+            class="header-contact__address--icon"
+          />
+        </figure>
+
+        <p class="header-contact__address--text">
           123 Meow Avenue. <br />
           Kittyville, CA 90210 United States
         </p>
       </div>
-      <div class="contact__type">
-        <div class="contact__type--phone">
-          <img src="../assets/icons/phone.svg" alt="phone-icon" />
+      <div class="header-contact__type">
+        <div class="header-contact__type--phone">
+          <figure>
+            <img src="../assets/icons/phone.svg" alt="phone-icon" />
+          </figure>
           <p>(555) 555-5555</p>
         </div>
-        <div class="contact__type--email">
-          <img src="../assets/icons/mail.svg" alt="mail-icon" />
+        <div class="header-contact__type--email">
+          <figure>
+            <img src="../assets/icons/mail.svg" alt="mail-icon" />
+          </figure>
           <p>info@neko-inn.com</p>
         </div>
       </div>
