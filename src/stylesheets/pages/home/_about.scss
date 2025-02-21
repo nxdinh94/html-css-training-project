@@ -10,6 +10,7 @@
     flex-direction: column;
     padding: 50px 0px;
   }
+<<<<<<< HEAD
 }
 .left-hero {
   @include flex($direction: column, $justify: center);
@@ -61,8 +62,46 @@
     height: 100%;
     max-width: 634px;
     width: auto;
+=======
+  &__left-hero {
+    @include flex($direction: column, $justify: center);
+    padding: 60px;
+    width: 100%;
+>>>>>>> bb2d5e1 (Refactor code #25)
     @include mobile {
-      max-width: 376px;
+      padding: 0px 50px;
+      margin-bottom: 56px;
+    }
+    &--subs {
+      margin-bottom: 15px;
+    }
+    &--title {
+      margin-bottom: 30px;
+    }
+    &--description {
+      margin-bottom: 50px;
+      @include mobile {
+        margin-bottom: 35px;
+      }
+    }
+    &--btn {
+      width: 165px;
+      @include mobile {
+        width: auto;
+      }
+    }
+  }
+  &__right-hero {
+    width: 100%;
+    display: flex;
+    &--cat {
+      margin: auto;
+      height: 100%;
+      max-width: 634px;
+      width: 100%;
+      @include mobile {
+        max-width: 376px;
+      }
     }
   }
 }
