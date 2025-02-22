@@ -5,7 +5,7 @@
   font-size: 36px;
   line-height: 54px;
   letter-spacing: 0%;
-  color: #232323;
+  color: $text-color;
   @include mobile {
     text-align: center;
   }

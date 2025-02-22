@@ -1,8 +1,10 @@
+@use "../abstracts/" as *;
+
 .description {
   font-family: Poppins;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0%;
-  color: #232323;
+  color: $text-color;
 }

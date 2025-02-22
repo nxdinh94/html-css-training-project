@@ -3,20 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel ./src/pages/index.html",
-    "lint": "eslint",
-    "prepare": "husky"
+    "dev": "parcel ./src/pages/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
-    "@eslint/js": "^9.20.0",
-    "eslint": "^9.20.1",
-    "globals": "^15.15.0",
-    "husky": "^9.1.7",
     "parcel-bundler": "^1.12.5",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^2.0.1",
