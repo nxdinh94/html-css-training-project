@@ -36,7 +36,7 @@
 
 ```sh
 cd html-css-training-project
-pnpm i
-pnpm dev
+npm i
+npm dev
 Open on web: http://localhost:1234
 ```
