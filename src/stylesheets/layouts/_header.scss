@@ -26,6 +26,7 @@
   }
   &__menu-link {
     text-decoration: none;
+    color: $text-color;
     margin: auto;
     font-weight: 700;
     font-size: 14px;
@@ -33,7 +34,7 @@
     letter-spacing: 0%;
   }
   &__menu-item {
-    width: 120px;
+    width: 6rem;
     @include flex($justify: center, $align: center);
   }
   &__action {
@@ -169,6 +170,8 @@
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 65px;
+        min-width: 280px;
+        width: 50%;
       }
 
       button {
@@ -262,7 +265,7 @@
       height: 288px;
       position: absolute;
       bottom: -12%;
-      right: -5%;
+      right: 2%;
       transform: rotate(90deg);
       z-index: -1;
       @include mobile {
