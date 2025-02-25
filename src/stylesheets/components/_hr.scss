@@ -1,5 +1,7 @@
+@use "../abstracts/" as *;
+
 hr {
-  border: 1px solid #80808021;
+  border: 1px solid $border-hr-color;
   margin-top: 67px;
   margin-bottom: 42px;
 }
