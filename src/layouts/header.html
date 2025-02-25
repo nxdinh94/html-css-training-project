@@ -1,62 +1,11 @@
 <header class="header">
   <div class="container header__container">
-    <div class="header__top">
-      <figure>
-        <img
-          class="header__logo"
-          src="assets/icons/logo.svg"
-          alt="my-logo"
-        />
-      </figure>
+    <!-- Navbar -->
+    <include src="components/header/navbar.html"></include>
 
-      <div class="header__menu">
-        <nav class="header__menu-list">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">About Us</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Our Rooms</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Purr Care</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Testimonial</a>
-          </li>
-        </nav>
-      </div>
-      <div class="header__action">
-        <div class="header__toggle">
-          <label for="modeToggle" class="header__toggle-label">
-            <figure class="header__toggle-figure">
-              <img
-                src="assets/icons/moon.svg"
-                alt="Night Mode"
-                class="header__toggle-icon moon-icon"
-              />
-            </figure>
-            <figure class="header__toggle-figure">
-              <img
-                src="assets/icons/shape.svg"
-                alt="Light Mode"
-                class="header__toggle-icon sun-icon"
-              />
-            </figure>
-            <div class="header__toggle-ball"></div>
-          </label>
-        </div>
-        <button class="btn header__book-now">
-          <p>BOOK NOW</p>
-        </button>
-      </div>
-      <img
-        src="assets/icons/menu.svg"
-        alt="menu"
-        class="header__menu-icon"
-      />
-    </div>
     <div class="header__bottom">
       <div class="header__container-bottom">
+        <!-- Left side -->
         <div class="header__left-side">
           <p class="header__left-side--subs subs">
             Where Feline Comfort Comes First
@@ -83,6 +32,7 @@
             </button>
           </div>
         </div>
+        <!-- Right side -->
         <div class="header__right-side">
           <div class="header__right-side-container">
             <figure>
@@ -136,36 +86,7 @@
         </div>
       </div>
     </div>
-    <!-- contact -->
-    <div class="header-contact">
-      <div class="header-contact__address">
-        <figure>
-          <img
-            src="assets/icons/location.svg"
-            alt="location"
-            class="header-contact__address--icon"
-          />
-        </figure>
-
-        <p class="header-contact__address--text">
-          123 Meow Avenue. <br />
-          Kittyville, CA 90210 United States
-        </p>
-      </div>
-      <div class="header-contact__type">
-        <div class="header-contact__type--phone">
-          <figure>
-            <img src="assets/icons/phone.svg" alt="phone-icon" />
-          </figure>
-          <p>(555) 555-5555</p>
-        </div>
-        <div class="header-contact__type--email">
-          <figure>
-            <img src="assets/icons/mail.svg" alt="mail-icon" />
-          </figure>
-          <p>info@neko-inn.com</p>
-        </div>
-      </div>
-    </div>
+    <!-- Contact -->
+    <include src="components/header/contact-section.html"></include>
   </div>
 </header>
