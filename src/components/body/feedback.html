@@ -1,0 +1,51 @@
+<section class="feedback">
+  <div class="feedback__header">
+    <p class="feedback__subs subs">Pawsitive Reviews from Happy Customers</p>
+    <h2 class="feedback__title title">They Celebrate NekoInn</h2>
+    <div class="feedback__description-hero">
+      <p class="feedback__description description">
+        Discover what our clients have to say about their experiences at
+        NekoInn. Their testimonials speak volumes about the exceptional care and
+        service we provide for their beloved feline companions.
+      </p>
+    </div>
+  </div>
+  <div class="feedback__body">
+    <div class="feedback__arrow arrow-container">
+      <figure>
+        <img src="assets/icons/left-arrow.svg" alt="left-arrow" />
+      </figure>
+    </div>
+
+    <div class="feedback__arrow arrow-container">
+      <figure>
+        <img src="assets/icons/right-arrow.svg" alt="right-arrow" />
+      </figure>
+    </div>
+
+    <each loop="item in {{ list }}">
+      <div class="feedback__hero">
+        <figure>
+          <img
+            class="feedback__hero--icon"
+            src="assets/icons/quote.svg"
+            alt="left-arrow"
+          />
+        </figure>
+        <p class="feedback__hero--text">
+          {{ item.feedback }}
+        </p>
+        <div class="feedback__hero--person">
+          <figure>
+            <img
+              class="feedback__hero--avt"
+              src="{{ item.avt }}"
+              alt="avt-1"
+            />
+          </figure>
+          <p class="feedback__hero--name">{{ item.name }}</p>
+        </div>
+      </div>
+    </each>
+  </div>
+</section>

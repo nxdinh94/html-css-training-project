@@ -1,0 +1,17 @@
+<section class="carousel">
+  <each loop="item in {{ list }}">
+    <div class="carousel__hero">
+      <figure>
+        <img
+          class="carousel__hero--picture"
+          src="{{item}}"
+          alt="cat-carousel-1"
+        />
+      </figure>
+
+      <div class="carousel__hero--icon">
+        <img src="assets/icons/home.svg" alt="home" />
+      </div>
+    </div>
+  </each>
+</section>

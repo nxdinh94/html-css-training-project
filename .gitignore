@@ -11,3 +11,4 @@
 # misc
 yarn.lock
 .DS_Store
+package-lock.json
