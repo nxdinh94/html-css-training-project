@@ -1,7 +1,12 @@
 <header class="header">
   <div class="container header__container">
     <!-- Navbar -->
-    <include src="components/header/navbar.html"></include>
+    <include
+      src="components/header/navbar.html"
+      locals='{
+        "list" : ["About Us", "Our Rooms", "Purr Care", "Testimonial"]
+      }'
+    ></include>
 
     <div class="header__bottom">
       <div class="header__container-bottom">
