@@ -1,47 +1,40 @@
 <div class="header__top">
-    <figure>
-      <img class="header__logo" src="assets/icons/logo.svg" alt="my-logo" />
-    </figure>
+  <figure>
+    <img class="header__logo" src="assets/icons/logo.svg" alt="my-logo" />
+  </figure>
 
-    <div class="header__menu">
-      <nav class="header__menu-list">
+  <div class="header__menu">
+    <nav class="header__menu-list">
+      <each loop="item in {{list}}">
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">About Us</a>
+          <a href="#" class="header__menu-link">{{item}}</a>
         </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Our Rooms</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Purr Care</a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Testimonial</a>
-        </li>
-      </nav>
-    </div>
-    <div class="header__action">
-      <div class="header__toggle">
-        <label for="modeToggle" class="header__toggle-label">
-          <figure class="header__toggle-figure">
-            <img
-              src="assets/icons/moon.svg"
-              alt="Night Mode"
-              class="header__toggle-icon moon-icon"
-            />
-          </figure>
-          <figure class="header__toggle-figure">
-            <img
-              src="assets/icons/shape.svg"
-              alt="Light Mode"
-              class="header__toggle-icon sun-icon"
-            />
-          </figure>
-          <div class="header__toggle-ball"></div>
-        </label>
-      </div>
-      <button class="btn header__book-now">
-        <p>BOOK NOW</p>
-      </button>
-    </div>
-    <img src="assets/icons/menu.svg" alt="menu" class="header__menu-icon" />
+      </each>
+    </nav>
   </div>
+  <div class="header__action">
+    <div class="header__toggle">
+      <label for="modeToggle" class="header__toggle-label">
+        <figure class="header__toggle-figure">
+          <img
+            src="assets/icons/moon.svg"
+            alt="Night Mode"
+            class="header__toggle-icon moon-icon"
+          />
+        </figure>
+        <figure class="header__toggle-figure">
+          <img
+            src="assets/icons/shape.svg"
+            alt="Light Mode"
+            class="header__toggle-icon sun-icon"
+          />
+        </figure>
+        <div class="header__toggle-ball"></div>
+      </label>
+    </div>
+    <button class="btn header__book-now">
+      <p>BOOK NOW</p>
+    </button>
+  </div>
+  <img src="assets/icons/menu.svg" alt="menu" class="header__menu-icon" />
+</div>

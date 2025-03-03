@@ -1,195 +1,50 @@
 <section class="prices">
-    <div class="prices__header-hero">
-      <p class="prices__subs subs">
-        Transparent Rates for your purry companion
-      </p>
-      <h2 class="prices__title title">Pricing</h2>
-      <p class="prices__description description">
-        In our Pricing Section, transparency meets affordability. At NekoInn,
-        we believe in straightforward pricing, ensuring you have peace of mind
-        knowing exactly what to expect.
-      </p>
-    </div>
-    <!-- PRICES BODY -->
-    <div class="prices__body-hero">
-      <!-- FIRST HERO -->
+  <div class="prices__header-hero">
+    <p class="prices__subs subs">Transparent Rates for your purry companion</p>
+    <h2 class="prices__title title">Pricing</h2>
+    <p class="prices__description description">
+      In our Pricing Section, transparency meets affordability. At NekoInn, we
+      believe in straightforward pricing, ensuring you have peace of mind
+      knowing exactly what to expect.
+    </p>
+  </div>
+  <!-- PRICES BODY -->
+
+  <div class="prices__body-hero">
+    <!-- FIRST HERO -->
+    <each loop="item in {{list}}">
       <div class="element-hero">
         <div class="element-hero__header">
-          <p class="element-hero__header--text">Purr Ducal</p>
+          <p class="element-hero__header--text">{{item.title}}</p>
           <figure>
             <img
               class="element-hero__header--icon"
-              src="assets/icons/crown-2.svg"
+              src="{{item.crownImg || 'assets/icons/crown-2.svg'}}"
               alt="crown-2 "
             />
           </figure>
         </div>
         <div class="element-hero__prices">
-          <b class="element-hero__prices--money">$160.99 </b>
-          <p class="element-hero__prices--time">PER DAY</p>
+          <b class="element-hero__prices--money">{{item.price}}</b>
+          <p class="element-hero__prices--time">{{item.time}}</p>
         </div>
         <ul class="element-hero__list">
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Standard Room Accommodation</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Basic Grooming</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Group Playtime</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Standard Meal Plan</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Daily Wellness Check</p>
-          </li>
+          <each loop="item2 in {{item.items}}">
+            <li class="element-hero__list--item">
+              <figure>
+                <img
+                  src="{{ item.tickImg || 'assets/icons/tick-outline.svg'}}"
+                  alt="tick-outline"
+                />
+              </figure>
+              <p>{{item2}}</p>
+            </li>
+          </each>
         </ul>
         <div class="element-hero__action">
           <button class="element-hero__action--btn btn">BOOK NOW</button>
         </div>
       </div>
-      <!-- SECOND HERO -->
-      <div class="element-hero element-hero-prime">
-        <div class="element-hero__header">
-          <p
-            class="element-hero__header--text element-hero__header--prime-text"
-          >
-            Purr imperial
-          </p>
-          <figure>
-            <img
-              class="element-hero__header--icon"
-              src="assets/icons/royal-crown.svg"
-              alt="crown-2 "
-            />
-          </figure>
-        </div>
-        <div class="element-hero__prices element-hero__prices-prime">
-          <b class="element-hero__prices--money">$600.99 </b>
-          <p class="element-hero__prices--time">PER DAY</p>
-        </div>
-        <ul class="element-hero__list element-hero__list-prime">
-          <li class="element-hero__list--item">
-            <figure>
-              <img
-                src="assets/icons/tick-circle-white.svg"
-                alt="tick-outline"
-              />
-            </figure>
-            <p>Presidential Suite Accommodation</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img
-                src="assets/icons/tick-circle-white.svg"
-                alt="tick-outline"
-              />
-            </figure>
-            <p>Deluxe Spa Grooming Package</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img
-                src="assets/icons/tick-circle-white.svg"
-                alt="tick-outline"
-              />
-            </figure>
-            <p>Exclusive One-on-One Playtime</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img
-                src="assets/icons/tick-circle-white.svg"
-                alt="tick-outline"
-              />
-            </figure>
-            <p>Gourmet Meal Plan</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img
-                src="assets/icons/tick-circle-white.svg"
-                alt="tick-outline"
-              />
-            </figure>
-            <p>24/7 Concierge Service</p>
-          </li>
-        </ul>
-        <div class="element-hero__action">
-          <button
-            class="element-hero__action--btn element-hero__action--btn-prime btn"
-          >
-            BOOK NOW
-          </button>
-        </div>
-      </div>
-      <!-- THIRST HERO -->
-      <div class="element-hero">
-        <div class="element-hero__header">
-          <p class="element-hero__header--text">Purr royal</p>
-          <figure>
-            <img
-              class="element-hero__header--icon"
-              src="assets/icons/crown-2.svg"
-              alt="crown-2 "
-            />
-          </figure>
-        </div>
-        <div class="element-hero__prices">
-          <b class="element-hero__prices--money">$299.99</b>
-          <p class="element-hero__prices--time">PER DAY</p>
-        </div>
-        <ul class="element-hero__list">
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Luxury Suite Accommodation</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Deluxe Grooming Package</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Private Playtime</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>Premium Meal Plan</p>
-          </li>
-          <li class="element-hero__list--item">
-            <figure>
-              <img src="assets/icons/tick-outline.svg" alt="tick-outline" />
-            </figure>
-            <p>VIP Wellness Check</p>
-          </li>
-        </ul>
-        <div class="element-hero__action">
-          <button class="element-hero__action--btn btn">BOOK NOW</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    </each>
+    
+</section>

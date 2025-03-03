@@ -14,57 +14,18 @@
       <p>BOOK NOW</p>
     </button>
   </div>
-  <div class="service__hero">
-    <figure>
-      <img
-        src="assets/images/service-cat-3.png"
-        class="service__hero--img"
-        alt="img"
-      />
-    </figure>
+  <each loop="item, index in {{list}}">
+    <div class="service__hero">
+      <figure>
+        <img src="{{item.imageUrl}}" class="service__hero--img" alt="img" />
+      </figure>
 
-    <p class="service__hero--title">Grooming Spa:</p>
-    <p class="service__hero--description">
-      Indulge your cat in a pampering experience at our Grooming Spa. Our
-      skilled groomers provide gentle care and attention, from luxurious baths
-      to expert grooming sessions, leaving your cat looking and feeling their
-      best.
-    </p>
-  </div>
-  <hr />
-  <div class="service__hero">
-    <figure>
-      <img
-        src="assets/images/service-cat-2.png"
-        class="service__hero--img"
-        alt="img"
-      />
-    </figure>
+      <p class="service__hero--title">{{item.title}}</p>
+      <p class="service__hero--description">{{item.description}}</p>
+    </div>
 
-    <p class="service__hero--title">Grooming Spa:</p>
-    <p class="service__hero--description">
-      Indulge your cat in a pampering experience at our Grooming Spa. Our
-      skilled groomers provide gentle care and attention, from luxurious baths
-      to expert grooming sessions, leaving your cat looking and feeling their
-      best.
-    </p>
-  </div>
-  <hr />
-  <div class="service__hero">
-    <figure>
-      <img
-        src="assets/images/service-cat-1.png"
-        class="service__hero--img"
-        alt="img"
-      />
-    </figure>
-
-    <p class="service__hero--title">Grooming Spa:</p>
-    <p class="service__hero--description">
-      Indulge your cat in a pampering experience at our Grooming Spa. Our
-      skilled groomers provide gentle care and attention, from luxurious baths
-      to expert grooming sessions, leaving your cat looking and feeling their
-      best.
-    </p>
-  </div>
+    <if condition="{{index}} < {{list.length}} - 1">
+      <hr />
+    </if>
+  </each>
 </section>
