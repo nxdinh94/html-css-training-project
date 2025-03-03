@@ -1,95 +1,32 @@
 <div class="footer">
   <div class="container">
-    <div class="footer-top">
-      <div class="footer-top-left">
-        <figure>
-          <img src="assets/icons/logo-footer.svg" alt="logo-footer" />
-        </figure>
-        <div class="footer-top-left__text">
-          <p>stay in touch</p>
-          <h1>Newsletter</h1>
-        </div>
-      </div>
-      <div class="footer-top-right">
-        <div class="footer-top-right-hero">
-          <div class="footer-top-right-hero-input">
-            <p>EMAIL</p>
-            <input
-              type="email"
-              class="top-right__input"
-              placeholder="Eg. janedoe@gmail.com"
-            />
-          </div>
-          <img
-            src="assets/icons/mail.svg"
-            alt="email"
-            class="top-right__img icon"
-          />
-        </div>
-      </div>
-    </div>
+    <include src="components/footer/footer_top.html"></include>
     <hr />
     <div class="footer-bottom">
-      <div class="footer-bottom-left">
-        <div class="footer-bottom-left-hero">
-          <div>
-            <img
-              src="assets/icons/location.svg"
-              alt="location"
-              class="icon"
-            />
-          </div>
-          <div class="footer-bottom-left-hero__text">
-            <h2>Pay Us A Visit</h2>
-            <br />
-            <p>123 Meow Avenue Kittyville, CA 90210 United States</p>
-          </div>
-        </div>
-        <div class="footer-bottom-left-hero">
-          <div>
-            <img src="assets/icons/phone.svg" alt="phone" class="icon" />
-          </div>
-          <div class="footer-bottom-left-hero__text">
-            <h2>Give Us A Call</h2>
-            <br />
-            <p>(555) 555-5555</p>
-          </div>
-        </div>
-        <div class="footer-bottom-left-hero">
-          <div>
-            <img src="assets/icons/mail.svg" alt="email" class="icon" />
-          </div>
-          <div class="footer-bottom-left-hero__text">
-            <h2>Send Us A Message</h2>
-            <br />
-            <p>info@neko-inn.com</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom-right">
-        <div class="footer-bottom-right-container">
-          <div class="footer-bottom-right-container__plan">
-            <h2>NekoInn Plans</h2>
-            <p>Purr Ducal</p>
-            <p>Purr Royal</p>
-            <p>Purr Imperial</p>
-          </div>
-          <div class="footer-bottom-right-container__social">
-            <h2>Socialize With NekoInn</h2>
-            <div>
-              <img src="assets/icons/facebook.svg" alt="facebook" />
-              <img src="assets/icons/X-Twitter.svg" alt="X-Twitter" />
-              <img src="assets/icons/linkedin.svg" alt="linkedin" />
-              <img src="assets/icons/youtube.svg" alt="youtube" />
-              <img src="assets/icons/instagram.svg" alt="instagram" />
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="footer-bottom-right--copyright">
-          <p>2024 © COPYRIGHT - NEKOINN A 5 STAR PURR HOTEL</p>
-        </div>
-      </div>
+      <include
+        src="components/footer/footer_bottom_left.html"
+        locals='{
+          "list":[
+            {"iconPath": "assets/icons/location.svg", "header": "Pay Us A Visit", "subtitle": "123 Meow Avenue Kittyville, CA 90210 United States"},
+            {"iconPath": "assets/icons/phone.svg", "header": "Give Us A Call", "subtitle": "(555) 555-5555"},
+            {"iconPath": "assets/icons/mail.svg", "header": "Send Us A Message", "subtitle": "info@neko-inn.com"}
+          ]
+        }'
+      ></include>
+      <include
+        src="components/footer/footer_bottom_right.html"
+        locals='{
+          "plan": {
+            "header" : "NekoInn Plans",
+            "list" : ["Purr Ducal", "Purr Royal", "Purr Imperial"]
+          },
+          "socialize": {
+            "header" : "Socialize With NekoInn",
+            "list" : ["assets/icons/facebook.svg","assets/icons/X-Twitter.svg","assets/icons/linkedin.svg", "assets/icons/youtube.svg", "assets/icons/instagram.svg"]
+          },
+          "copyRight" : "2024 © COPYRIGHT - NEKOINN A 5 STAR PURR HOTEL"
+        }'
+      ></include>
     </div>
   </div>
 </div>

@@ -1,0 +1,22 @@
+<div class="footer-bottom-right">
+  <div class="footer-bottom-right-container">
+    <div class="footer-bottom-right-container__plan">
+      <h2>{{plan.header}}</h2>
+      <each loop="item in {{plan.list}}">
+        <p>{{item}}</p>
+      </each>
+    </div>
+    <div class="footer-bottom-right-container__social">
+      <h2>{{socialize.header}}</h2>
+      <div>
+        <each loop="item in {{socialize.list}}">
+          <img src="{{item}}" alt="facebook" />
+        </each>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="footer-bottom-right--copyright">
+    <p>{{copyRight}}</p>
+  </div>
+</div>
