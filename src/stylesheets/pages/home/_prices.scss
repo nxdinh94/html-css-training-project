@@ -37,6 +37,19 @@
   &:nth-child(2) {
     height: 644px;
     background-color: $primary-color;
+    color: $background-color;
+    .element-hero__header .element-hero__header--text {
+      color: $background-color;
+    }
+    .element-hero__prices {
+      margin-bottom: 50px;
+    }
+    .element-hero__list {
+      margin-bottom: 80px;
+    }
+    .element-hero__action .element-hero__action--btn {
+      background-color: $secondary-color;
+    }
   }
   &:first-child {
     border-radius: 40px 0px 0px 40px;
@@ -50,9 +63,7 @@
       border-radius: 40px;
     }
   }
-  &-prime {
-    color: white;
-  }
+
   &__header {
     @include flex($justify: space-between, $align: center);
     &--text {
@@ -61,9 +72,6 @@
       line-height: 24px;
       letter-spacing: 2px;
       color: $primary-color;
-    }
-    &--prime-text {
-      color: white;
     }
     &--icon {
       width: 57px;
@@ -89,9 +97,7 @@
       line-height: 21px;
     }
   }
-  &__prices-prime {
-    margin-bottom: 50px;
-  }
+
   &__list {
     padding-left: 5px;
     margin-bottom: 45px;
@@ -105,15 +111,10 @@
       gap: 16px;
     }
   }
-  &__list-prime {
-    margin-bottom: 80px;
-  }
+
   &__action {
     &--btn {
       width: 236px;
-    }
-    &--btn-prime {
-      background-color: $secondary-color;
     }
   }
 }

@@ -6,7 +6,16 @@
     <include src="components/body/room.html"></include>
 
     <!-- SERVICE SECTION -->
-    <include src="components/body/services.html"></include>
+    <include
+      src="components/body/services.html"
+      locals='{
+        "list":[
+          {"imageUrl" : "assets/images/service-cat-3.png","title" : "Grooming Spa:" ,"description": "Indulge your cat in a pampering experience at our Grooming Spa. Our skilled groomers provide gentle care and attention, from luxurious baths to expert grooming sessions, leaving your cat looking and feeling their best."},
+          {"imageUrl" : "assets/images/service-cat-2.png","title" : "Playtime Paradise:" ,"description": "Let your cat unleash their playful side in our Playtime Paradise. With a variety of engaging toys, climbing structures, and interactive games, our supervised play sessions offer the perfect opportunity for your cat to exercise, socialize, and have fun."},
+          {"imageUrl" : "assets/images/service-cat-1.png","title" : "Gourmet Dining:" ,"description": "Treat your cat taste buds to a culinary delight with our Gourmet Dining service. From premium cat cuisine to customized meal plans tailored to their dietary needs, our gourmet chefs ensure that every meal is both delicious and nutritious."}
+        ]
+      }'
+    ></include>
 
     <!-- CAROUSEL SECTION -->
     <include
@@ -17,7 +26,55 @@
     ></include>
 
     <!-- PRICES SECTION -->
-    <include src="components/body/prices.html"></include>
+    <include
+      src="components/body/prices.html"
+      locals='{
+        "list": [
+          {
+            "tickImg": "assets/icons/tick-outline.svg",
+            "crownImg": "assets/icons/crown-2.svg",
+            "title": "Purr Ducal",
+            "price": "$160.99",
+            "time": "PER DAY",
+            "items": [
+              "Standard Room Accommodation",
+              "Basic Grooming",
+              "Group Playtime",
+              "Standard Meal Plan",
+              "Daily Wellness Check"
+            ]
+          },
+          {
+            "title": "Purr Imperial",
+            "crownImg": "assets/icons/royal-crown.svg",
+            "price": "$600.99",
+            "time": "PER DAY",
+            "tickImg": "assets/icons/tick-circle-white.svg",
+            "items": [
+              "Presidential Suite Accommodation",
+              "Deluxe Spa Grooming Package",
+              "Exclusive One-on-One Playtime",
+              "Gourmet Meal Plan",
+              "24/7 Concierge Service"
+            ]
+          },
+          {
+            "title": "Purr Regal",
+            "crownImg": "assets/icons/crown-2.svg",
+            "price": "$299.99",
+            "time": "PER DAY",
+            "tickImg": "assets/icons/tick-outline.svg",
+            "items": [
+              "Luxury Suite Accommodation",
+              "Deluxe Grooming Package",
+              "Private Playtime",
+              "Premium Meal Plan",
+              "VIP Wellness Check"
+            ]
+          }
+        ]
+      }'
+    ></include>
 
     <!-- FEEDBACK SECTION -->
     <include
@@ -32,6 +89,19 @@
     ></include>
 
     <!-- BOOKING SECTION -->
-    <include src="components/body/booking.html"></include>
+    <include 
+      src="components/body/booking.html"
+      locals='{
+        "list":[
+          {"legend": "FULL NAME", "placeHolder" : "Eg. Jane Doe"},
+          {"legend": "EMAIL", "placeHolder" : "Eg. janedoe@gmail.com"},
+          {"legend": "PHONE NUMBER", "placeHolder" : "100-616-6060"},
+          {"legend": "CAT NAME", "placeHolder" : "Eg. Timothy"},
+          {"legend": "PICK A DATE", "placeHolder" : "July 16th, 2024 - 9:26 PM"},
+          {"legend": "How many pets?", "placeHolder" : "6"},
+          {"legend": "purr plan", "placeHolder" : "Purr Royal"}
+        ]
+      }'
+    ></include>
   </div>
 </body>
