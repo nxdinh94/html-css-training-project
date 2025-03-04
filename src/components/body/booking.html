@@ -1,16 +1,13 @@
 <section class="booking">
-  <div class="booking-header">
-    <p class="booking-header__subs subs">Secure Your Cat's Stay Today</p>
-    <h2 class="booking-header__title title">Book Now</h2>
-    <div class="booking-header__description-hero">
-      <p class="booking-header__description description">
-        Ready to reserve your cat's spot at NekoInn? Our easy-to-use booking
-        system makes it simple to schedule your cat's stay with us. Just select
-        your desired dates, choose from our range of accommodations and
-        services, and complete your reservation in a few easy steps.
-      </p>
-    </div>
-  </div>
+  
+  <include
+    src="components/introduce_section.html"
+    locals='{
+      "subs" : "Secure Your Cat Stay Today",
+      "title" : "Book Now",
+      "description" : "Ready to reserve your cat spot at NekoInn? Our easy-to-use booking system makes it simple to schedule your cat is stay with us. Just select your desired dates, choose from our range of accommodations and services, and complete your reservation in a few easy steps."
+    }'
+  ></include>
   <div class="booking-body">
     <each loop="item in {{list}}">
       <div class="booking-body__form-hero">

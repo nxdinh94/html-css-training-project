@@ -5,17 +5,9 @@
   width: 100%;
   @include mobile {
     margin: 144px 0px;
+    margin-bottom: 60px;
   }
-  &__header-hero {
-    text-align: center;
-    width: 100%;
-    max-width: 650px;
-    margin: 0 auto;
-    margin-bottom: 70px;
-  }
-  &__title {
-    margin: 20px 0px;
-  }
+
   &__body-hero {
     @include flex($align: center);
     @include mobile {

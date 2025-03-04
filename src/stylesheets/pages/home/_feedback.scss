@@ -1,11 +1,7 @@
 @use "../../abstracts/" as *;
 
 .feedback {
-  &__header {
-    @include flex($align: center, $direction: column);
-    gap: 23px;
-    margin-bottom: 80px;
-  }
+
   &__body {
     @include flex();
     padding: 0px 20px;
