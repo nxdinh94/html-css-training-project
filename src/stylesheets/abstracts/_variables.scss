@@ -5,11 +5,13 @@ $primary-font: Poppins;
 
 // Breakpoints
 
-$medium: 768px;
-$extra-lager: 1200px;
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1280px;
 
-$mobile: calc($medium - 1px);
-$tablet: calc($extra-lager - 1px);
+$mobile: calc($phone - 1px);
+$tablet: calc($tablet - 1px);
+$laptop: calc($laptop - 1px);
 
 // Colors
 $primary-color: #c75e90;
