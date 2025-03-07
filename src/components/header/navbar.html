@@ -1,40 +1,40 @@
-<div class="header__top">
+<div class="navbar-hero">
   <figure>
-    <img class="header__logo" src="assets/icons/logo.svg" alt="my-logo" />
+    <img class="navbar-hero__logo" src="assets/icons/logo.svg" alt="my-logo" />
   </figure>
 
-  <div class="header__menu">
-    <nav class="header__menu-list">
+  <div class="navbar-hero__menu">
+    <nav class="navbar-hero__menu-list">
       <each loop="item in {{list}}">
-        <li class="header__menu-item">
-          <a href="#" class="header__menu-link">{{item}}</a>
+        <li class="navbar-hero__menu-item">
+          <a href="#" class="navbar-hero__menu-link">{{item}}</a>
         </li>
       </each>
     </nav>
   </div>
-  <div class="header__action">
-    <div class="header__toggle">
-      <label for="modeToggle" class="header__toggle-label">
-        <figure class="header__toggle-figure">
+  <div class="navbar-hero__action">
+    <div class="navbar-hero__toggle">
+      <label for="modeToggle" class="navbar-hero__toggle-label">
+        <figure class="navbar-hero__toggle-figure">
           <img
             src="assets/icons/moon.svg"
             alt="Night Mode"
-            class="header__toggle-icon moon-icon"
+            class="navbar-hero__toggle-icon moon-icon"
           />
         </figure>
-        <figure class="header__toggle-figure">
+        <figure class="navbar-hero__toggle-figure">
           <img
             src="assets/icons/shape.svg"
             alt="Light Mode"
-            class="header__toggle-icon sun-icon"
+            class="navbar-hero__toggle-icon sun-icon"
           />
         </figure>
-        <div class="header__toggle-ball"></div>
+        <div class="navbar-hero__toggle-ball"></div>
       </label>
     </div>
-    <button class="btn header__book-now">
+    <button class="btn navbar-hero__book-now">
       <p>BOOK NOW</p>
     </button>
   </div>
-  <img src="assets/icons/menu.svg" alt="menu" class="header__menu-icon" />
+  <img src="assets/icons/menu.svg" alt="menu" class="navbar-hero__menu-icon" />
 </div>
