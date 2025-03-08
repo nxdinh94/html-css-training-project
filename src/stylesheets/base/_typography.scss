@@ -14,7 +14,11 @@ body {
   background-color: $background-color;
   overflow-x: hidden;
   @include tablet {
-    font-size: pxToRem(11);
+    font-size: pxToRem(14);
     line-height: pxToRem(16);
   }
+  @include mobile {
+    font-size: pxToRem(12);
+    line-height: pxToRem(16);
+  } 
 }

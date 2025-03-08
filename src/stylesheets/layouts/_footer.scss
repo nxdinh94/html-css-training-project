@@ -4,10 +4,16 @@
   height: fit-content;
   border-radius: 160px 160px 0px 0px;
   background-color: $footer-bg-color;
-  padding: 50px 0px;
+  padding: 50px 10px;
+  max-width: 1440px;
+  margin: auto;
+  @include landscape {
+    padding: 80px 0px;
+  }
   @include mobile {
     height: fit-content;
     border-radius: 90px 90px 0px 0px;
+    padding: 0px;
   }
   &-top {
     @include flex($justify: start);
@@ -24,6 +30,9 @@
       }
       img {
         margin-right: 20px;
+        @include mobile {
+          width: 95%;
+        }
       }
       &__text {
         p {
@@ -168,7 +177,7 @@
         &__social {
           @include mobile {
             margin-left: 30px;
-            margin-top: 80px;
+            margin-top: 60px;
           }
           h2 {
             font-weight: 700;

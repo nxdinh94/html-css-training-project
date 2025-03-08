@@ -8,7 +8,7 @@
   border-radius: 40px;
 
   @include flex();
-  @include mobile {
+  @include tablet {
     flex-direction: column;
   }
   hr {
@@ -19,7 +19,7 @@
   }
   &__hero {
     flex: 1;
-    padding: 50px 40px;
+    padding: clamp($min-padding, 2vw, 50px) clamp($min-padding, 2vw, 40px);
     @include mobile {
       height: 220px;
       padding: 40px;
@@ -40,31 +40,51 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
+      @include landscape {
+        font-size: 13px;
+      }
     }
   }
   &__hero-first {
     height: 476px;
     flex: 1;
-    padding: 60px 40px;
+    padding: clamp($min-padding, 2vw, 60px) 0px;
     background-color: $primary-color;
     border-radius: 40px;
     @include flex($direction: column, $justify: center);
-    @include mobile {
+    @include landscape {
+      padding: 12px;
+    }
+    @include tablet {
+      padding: 25px;
     }
     &--subs {
       color: $subtitle-color !important;
       margin-bottom: 20px;
       margin-left: 10px;
+      text-align: center;
+      @include landscape {
+        font-size: 11px;
+        margin-bottom: 12px;
+      } 
     }
     &--title {
       color: white;
       margin-bottom: 16px;
-      margin-left: 10px;
+      text-align: center;
+      @include landscape {
+        font-size: 30px;
+        margin-bottom: 8px;
+      }
     }
     &--description {
       color: white;
       margin-bottom: 33px;
-      margin-left: 10px;
+      @include landscape {
+        font-size: 13px;
+        margin-bottom: 20px;
+
+      }
     }
     &--btn {
       position: relative;

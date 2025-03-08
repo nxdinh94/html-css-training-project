@@ -5,13 +5,9 @@ $primary-font: Poppins;
 
 // Breakpoints
 
-$phone: 480px;
+$mobile: 480px;
 $tablet: 768px;
-$laptop: 1280px;
-
-$mobile: calc($phone - 1px);
-$tablet: calc($tablet - 1px);
-$laptop: calc($laptop - 1px);
+$landscape: 1024px;
 
 // Colors
 $primary-color: #c75e90;
@@ -23,3 +19,11 @@ $footer-bg-color: #161616;
 $secondary-color: #8e345f;
 $border-form-color:  #b7b7b7;
 $border-hr-color:  #80808021;
+$white:  #ffffff;
+
+
+
+$min-padding: 0.8rem;
+$max-padding: 2rem;
+$prefered-value: 5vw;
+$base-padding: 24px;

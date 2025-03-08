@@ -3,7 +3,7 @@
   margin-top: 70px;
   padding-bottom: 60px;
   @include flex();
-  @include mobile {
+  @include landscape {
     margin-top: 35px;
     flex-direction: column;
   }
@@ -12,7 +12,14 @@
   padding-right: 90px;
   width: 100%;
   flex: 1;
-  @include mobile {
+
+  @include landscape {
+    display: none;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  @include tablet {
+    display: block;
     margin-bottom: 50px;
     padding: 0;
   }
@@ -29,14 +36,21 @@
   flex: 1;
   &__subs {
     margin-bottom: 25px;
+    @include landscape {
+      text-align: center;
+    }
   }
   &__title {
     margin-bottom: 40px;
+    @include landscape {
+      text-align: center;
+    }
   }
   hr {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+
 }
 .feature-one,
 .feature-two,

@@ -13,6 +13,11 @@
     @content;
   }
 }
+@mixin landscape {
+  @media screen and (max-width: $landscape) {
+    @content;
+  }
+}
 
 // Flex
 @mixin flex($direction: false, $align: false, $justify: false, $wrap: false) {

@@ -6,7 +6,12 @@
   line-height: 54px;
   letter-spacing: 0%;
   color: $text-color;
+  @include tablet {
+    text-align: center;
+    font-size: 34px;
+  }
   @include mobile {
     text-align: center;
+    font-size: 32px;
   }
 }

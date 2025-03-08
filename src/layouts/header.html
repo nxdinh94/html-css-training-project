@@ -1,97 +1,101 @@
 <header class="header">
-  <div class="container header__container">
-    <!-- Navbar -->
-    <include
-      src="components/header/navbar.html"
-      locals='{
+  <div class="container">
+    <div class="header__container">
+      <!-- Navbar -->
+      <include
+        src="components/header/navbar.html"
+        locals='{
         "list" : ["About Us", "Our Rooms", "Purr Care", "Testimonial"]
       }'
-    ></include>
+      ></include>
 
-    <div class="header__bottom">
-      <div class="header__container-bottom">
-        <!-- Left side -->
-        <div class="header__left-side">
-          <p class="header__left-side--subs subs">
-            Where Feline Comfort Comes First
-          </p>
-          <p class="header__left-side--title title">Your 5 Stars Purr Inn</p>
-          <p class="header__left-side--description description">
-            At NekoInn, we understand that your beloved feline companion
-            deserves the best care, even when you can't be there. That's why
-            we've created a haven designed specifically for cats, where every
-            whisker is cherished and every purr is celebrated. From cozy
-            accommodations to personalized attention, we strive to provide a
-            nurturing environment where your cat can relax, play, and thrive
-            while you're away. Welcome to NekoInn, where your cat's comfort and
-            happiness are our top priorities.
-          </p>
-          <button class="btn header__left-side--btn">BOOK A PURR-SUITE</button>
-          <div class="header__left-side--watch">
-            <p class="header__left-side--text">WATCH NOW</p>
-            <p class="header__left-side--text">Introducing The NekoInn</p>
-            <button>
-              <figure>
-                <img src="assets/icons/play-button.svg" alt="sleeping cat" />
-              </figure>
+      <div class="header__bottom">
+        <div class="header__container-bottom">
+          <!-- Left side -->
+          <div class="header__left-side">
+            <p class="header__left-side--subs subs">
+              Where Feline Comfort Comes First
+            </p>
+            <p class="header__left-side--title title">Your 5 Stars Purr Inn</p>
+            <p class="header__left-side--description description">
+              At NekoInn, we understand that your beloved feline companion
+              deserves the best care, even when you can't be there. That's why
+              we've created a haven designed specifically for cats, where every
+              whisker is cherished and every purr is celebrated. From cozy
+              accommodations to personalized attention, we strive to provide a
+              nurturing environment where your cat can relax, play, and thrive
+              while you're away. Welcome to NekoInn, where your cat's comfort
+              and happiness are our top priorities.
+            </p>
+            <button class="btn header__left-side--btn">
+              BOOK A PURR-SUITE
             </button>
+            <div class="header__left-side--watch">
+              <p class="header__left-side--text">WATCH NOW</p>
+              <p class="header__left-side--text">Introducing The NekoInn</p>
+              <button>
+                <figure>
+                  <img src="assets/icons/play-button.svg" alt="sleeping cat" />
+                </figure>
+              </button>
+            </div>
           </div>
-        </div>
-        <!-- Right side -->
-        <div class="header__right-side">
-          <div class="header__right-side-container">
-            <figure>
-              <img
-                src="assets/images/header-left-cat4.png"
-                alt="cat4"
-                class="header__right-side-container--img header__right-side-container--img4"
-              />
-            </figure>
+          <!-- Right side -->
+          <div class="header__right-side">
+            <div class="header__right-side-container">
+              <figure>
+                <img
+                  src="assets/images/header-left-cat4.png"
+                  alt="cat4"
+                  class="header__right-side-container--img header__right-side-container--img4"
+                />
+              </figure>
 
-            <figure>
-              <img
-                src="assets/images/header-left-cat3.png"
-                alt="cat3"
-                class="header__right-side-container--img header__right-side-container--img3"
-              />
-            </figure>
+              <figure>
+                <img
+                  src="assets/images/header-left-cat3.png"
+                  alt="cat3"
+                  class="header__right-side-container--img header__right-side-container--img3"
+                />
+              </figure>
 
-            <figure>
-              <img
-                src="assets/images/header-left-cat2.png"
-                alt="cat2"
-                class="header__right-side-container--img header__right-side-container--img2"
-              />
-            </figure>
+              <figure>
+                <img
+                  src="assets/images/header-left-cat2.png"
+                  alt="cat2"
+                  class="header__right-side-container--img header__right-side-container--img2"
+                />
+              </figure>
 
-            <figure>
-              <img
-                src="assets/images/header-left-cat1.png"
-                alt="cat1"
-                class="header__right-side-container--img header__right-side-container--img1"
-              />
-            </figure>
+              <figure>
+                <img
+                  src="assets/images/header-left-cat1.png"
+                  alt="cat1"
+                  class="header__right-side-container--img header__right-side-container--img1"
+                />
+              </figure>
 
-            <figure>
-              <img
-                src="assets/icons/Vector.svg"
-                alt="vector-top-left"
-                class="header__right-side-container--vector-top-left"
-              />
-            </figure>
+              <figure>
+                <img
+                  src="assets/icons/Vector.svg"
+                  alt="vector-top-left"
+                  class="header__right-side-container--vector-top-left"
+                />
+              </figure>
 
-            <figure>
-              <img
-                src="assets/icons/Vector.svg"
-                alt="vector-bottom-right"
-                class="header__right-side-container--vector-bottom-right"
-              />
-            </figure>
+              <figure>
+                <img
+                  src="assets/icons/Vector.svg"
+                  alt="vector-bottom-right"
+                  class="header__right-side-container--vector-bottom-right"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Contact -->
+      <include src="components/header/contact-section.html"></include>
     </div>
-    <!-- Contact -->
-    <include src="components/header/contact-section.html"></include>
   </div>
 </header>

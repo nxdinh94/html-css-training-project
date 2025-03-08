@@ -4,20 +4,26 @@
 
   &__body {
     @include flex();
-    padding: 0px 20px;
+    padding: 0px clamp(20px, 3vw, 30px);
     position: relative;
     gap: 20px;
+    // @include landscape{
+    //   padding: 0px 25px;
+    // }
+    // @include mobile{
+    //   padding: 0px 20px;
+    // }
   }
   &__arrow {
     position: absolute;
     &:first-child {
-      left: -7px;
+      left: -12px;
       top: 50%;
       bottom: 50%;
       margin: auto 0px;
     }
     &:nth-child(2) {
-      right: -7px;
+      right: -12px;
       top: 50%;
       bottom: 50%;
       margin: auto 0px;
@@ -32,8 +38,7 @@
   &__hero {
     flex: 1;
     @include flex($direction: column);
-
-    padding: 35px 40px;
+    padding:  clamp(20px, 2vw, 35px) clamp(20px, 2vw, 40px);
     background-color: white;
     border-radius: 40px;
     @include mobile {
