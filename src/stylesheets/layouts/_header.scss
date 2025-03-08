@@ -86,15 +86,21 @@
       }
 
       button {
+        @include flex($align: center, $justify: center);
         position: absolute;
         right: -5%;
         top: 37%;
-        @include flex($align: center, $justify: center);
         width: 43px;
         height: 43px;
         border-radius: 100px;
         background-color: $primary-color;
         border: none;
+        cursor: pointer;
+        &:hover {
+          scale: 1.1;
+          background-color: $hover-button;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
   }
@@ -127,6 +133,8 @@
       display: block;
       background-image: url("../assets/images/mobile/cat-bg.png");
       height: 365px;
+      min-width: 220px;
+      max-width: 340px;
     }
     &--img {
       position: absolute;
@@ -166,6 +174,12 @@
         width: 75px;
         height: 75px;
       }
+      @media screen and (max-width: 360px) {
+        left: 20%;
+        bottom: 9%;
+        width: 75px;
+        height: 75px;
+      }
     }
     &--img3 {
       left: -14%;
@@ -195,6 +209,12 @@
       @include mobile {
         left: 55%;
         bottom: -5%;
+        width: 75px;
+        height: 75px;
+      }
+      @media screen and (max-width: 360px) {
+        left: 55%;
+        bottom: 0%;
         width: 75px;
         height: 75px;
       }

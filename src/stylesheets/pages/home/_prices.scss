@@ -42,6 +42,10 @@
     }
     .element-hero__action .element-hero__action--btn {
       background-color: $secondary-color;
+      &:hover {
+        background-color: $hover-button;
+        transition: 0.3s ease-in-out;
+      }
     }
   }
   &:first-child {
