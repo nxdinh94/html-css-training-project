@@ -17,15 +17,17 @@
   }
   &-top {
     @include flex($justify: start);
-    @include mobile {
+    gap: 20px;
+    @include tablet {
       flex-direction: column;
-      align-items: center;
+      gap: 0px;
+      align-items: start;
     }
     &-left {
       flex: 1;
       @include flex($align: center);
-      @include mobile {
-        margin-bottom: 58px;
+      @include tablet {
+        margin-bottom: 50px;
         margin-top: 40px;
       }
       img {
@@ -55,7 +57,7 @@
     &-right {
       flex: 2;
       @include flex($align: center, $justify: end);
-      @include mobile {
+      @include tablet {
         width: 100%;
       }
       &-hero {
@@ -103,7 +105,7 @@
   }
   &-bottom {
     @include flex();
-    @include mobile {
+    @include tablet {
       flex-direction: column;
     }
     &-left {

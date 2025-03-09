@@ -8,7 +8,11 @@
     padding-top: 34px;
     margin-bottom: 100px;
   }
-
+  &__logo{
+    @include mobile{
+      width: 150px;
+    }
+  }
   &__menu {
     @include flex();
     @include tablet {
@@ -51,6 +55,9 @@
     display: none;
     @include tablet {
       display: block;
+    }
+    @include mobile {
+      width: 39px;
     }
   }
   /* Toggle Container */
